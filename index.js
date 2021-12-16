@@ -1,7 +1,5 @@
 const isCreditCardNumberValid = (cardNumber) => {
     let num = Array.from(String(cardNumber), Number);
-    console.log(num);
-    
     let conditions = [
         typeof(cardNumber) == 'number',
         num.length === 16,
@@ -23,7 +21,7 @@ const isCreditCardNumberValid = (cardNumber) => {
         else
             return 'Valid';
     }
-
 }
-console.log(isCreditCardNumberValid(2232323111111142));
+
+
 
